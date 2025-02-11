@@ -91,31 +91,36 @@ a {
     justify-content: end;
     margin-top: auto;
     padding-right: 15px;
+    margin-bottom: 10px;
 }
 
 
-.download {
+.user-flex {
     display: flex;
     min-width: calc(100% / 2);
     align-items: center;
+    padding-bottom: 10px;
+
 }
 
-.download img {
-   max-width: 40px;
-}
-
-.download a {
-    padding-left: 10px;
+.user .user-flex img {
+    width: 30px;
+    height: 30px;
 }
 
 .user-info {
+    border-top: 2px solid #9a9a9a;
+    padding-top: 10px;
 }
 
-.profile-img img {
-    width: 60px;
-    height: 60px;
-    background-color: grey;
-    border-radius: 40%;
+.user-info .user-flex  img {
+    background-color: #666666;
+    border-radius: 50%;
+}
+
+
+.user-flex a {
+    padding-left: 10px;
 }
 
 
