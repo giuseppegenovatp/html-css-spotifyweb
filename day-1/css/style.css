@@ -20,7 +20,7 @@ a {
 }
 
 .main-container {
-    height: calc(100vh - 85px);
+    height: calc(100vh - 80px);
     display: flex;
 }
 
@@ -29,6 +29,8 @@ a {
     background-color: #000000;
     padding-left: 15px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .user-menu {
@@ -87,16 +89,33 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    max-width: 100%;
+    margin-top: auto;
+    padding-right: 15px;
 }
 
 
 .download {
-    background-color: red;
+    display: flex;
+    min-width: calc(100% / 2);
+    align-items: center;
+}
+
+.download img {
+   max-width: 40px;
+}
+
+.download a {
+    padding-left: 10px;
 }
 
 .user-info {
-    background-color: blue;
+}
+
+.profile-img img {
+    width: 60px;
+    height: 60px;
+    background-color: grey;
+    border-radius: 40%;
 }
 
 
