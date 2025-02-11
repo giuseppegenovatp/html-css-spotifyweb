@@ -88,7 +88,7 @@ footer {
 }
 
 .user-menu ul li a span {
-    display: inline-block;
+    display: inline-block;  
     margin-left: 10px;
 }
 
@@ -100,6 +100,14 @@ footer {
 .user-playlist {
     margin-top:30px;
     padding-left:15px ;
+}
+
+.icon-add-playlist {
+    padding: 20px;
+    background-color: grey;
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 .user-playlist h4 {
@@ -165,7 +173,7 @@ footer {
  @media screen and (max-width:478px) {
 
     .col-user {
-        padding: 15px 15px;
+        padding:0px;
     }
 
     .logo-desktop {
@@ -174,13 +182,9 @@ footer {
 
     .logo-mobile {
         display: block;
-        padding: 0;
+        padding: 10px;
     }
-
-    .logo-mobile {
-        padding: 0;
-    }
-
+    
     .user-menu ul {
         padding-left: 0px; 
     }
@@ -188,6 +192,11 @@ footer {
     .user-menu ul li {
         justify-content: center;
     }
+
+    .user-menu ul li:hover {
+        border-left: 2px solid #b8f166;
+    }
+    
     
     .user-menu ul li a span {
         display: none;
