@@ -19,6 +19,10 @@ a {
     display: inline-block;
 }
 
+img {
+    display: block;
+}
+
 .main-container {
     height: calc(100vh - 80px);
     display: flex;
@@ -46,8 +50,12 @@ a {
 /* STILE PER COLONNA DI SINISTRA
  PER L'UTENTE + LOGO */
 
- #logo img {
+ .logo-desktop {
     padding:12px 35px 12px 0px;
+}
+
+.logo-mobile  {
+    display: none;
 }
 
 .col-user {
@@ -55,6 +63,7 @@ a {
     padding-left: 15px;
     flex: 1;
     display: flex;
+    flex-shrink: 0;
     flex-direction: column;
 }
 
@@ -63,23 +72,26 @@ a {
 }
 
 .user-menu ul {
-    display: flex;
-    flex-direction: column;
     padding-left:15px ;
 }
 
 .user-menu ul li {
     padding-bottom: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 .user-menu ul li a {
     display: flex;
-    justify-items: center;
     align-items: center;
-    gap: 15px;
 }
 
-.user-menu ul li a img {
+.user-menu ul li a span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.user-menu ul li img {
     width: 30px;
     height: 30px;
 }
@@ -141,3 +153,58 @@ a {
 .user-flex a {
     padding-left: 10px;
 }
+
+/* STILE PER COLONNA DI SINISTRA
+ PER L'UTENTE + LOGO */
+
+
+
+
+ /* MEDIA QUERY FOR MOBILE */
+ @media screen and (max-width:478px) {
+
+    .col-user {
+        padding: 15px 15px;
+    }
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+        padding: 0;
+    }
+
+    .logo-mobile {
+        padding: 0;
+    }
+
+    .user-menu ul {
+        padding-left: 0px; 
+    }
+
+    .user-menu ul li {
+        justify-content: center;
+    }
+    
+    .user-menu ul li a span {
+        display: none;
+    }
+
+    .user-playlist {
+        display: none;
+    }
+
+    .user-info {
+        border: 0;
+    }
+
+    .user-flex a {
+        display:none ;
+    }
+
+    .user {
+        padding: 0px 10px;
+    }
+ }
