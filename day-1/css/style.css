@@ -2,29 +2,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
-.container {
+.main-container {
     height: calc(100vh - 85px);
     display: flex;
 }
 
+
+/* STILE PER COLONNA PULSANTI PER L'UTENTE + LOGO */
 .col-user {
-    background-color: red;
-    flex: 1;
+    background-color: #000000;
+    flex:1;
 }
 
+#logo img {
+    padding:15px;
+}
+
+
+
+
+
 .col-content{
-    background-color: yellow;
-    flex: 5;
+    background-color: #131923;
+    flex: 7;
 }
 
 .footer-menu {
     height: 85px;
-    background-color: blue;
+    background-color: #282828;
 }
 
 .header {
-    background-color: grey;
+    background-color: #0e131c;
     min-height: 90px;
 }
