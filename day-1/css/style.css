@@ -24,7 +24,32 @@ a {
     display: flex;
 }
 
-/* STILE PER COLONNA PULSANTI PER L'UTENTE + LOGO */
+/* STILI degli altri elementi per creare la struttura dio base */
+.col-content{
+    background-color: #131923;
+    flex: 7;
+}
+
+.footer-menu {
+    height: 85px;
+    background-color: #282828;
+}
+
+.header {
+    background-color: #0e131c;
+    min-height: 90px;
+}
+/* STILI degli altri elementi per creare la struttura dio base */
+
+
+
+/* STILE PER COLONNA DI SINISTRA
+ PER L'UTENTE + LOGO */
+
+ #logo img {
+    padding:12px 35px 12px 0px;
+}
+
 .col-user {
     background-color: #000000;
     padding-left: 15px;
@@ -81,10 +106,6 @@ a {
     text-transform: capitalize;
 }
 
-#logo img {
-    padding:12px 35px 12px 0px;
-}
-
 .user {
     display: flex;
     flex-direction: column;
@@ -93,7 +114,6 @@ a {
     padding-right: 15px;
     margin-bottom: 10px;
 }
-
 
 .user-flex {
     display: flex;
@@ -118,25 +138,6 @@ a {
     border-radius: 50%;
 }
 
-
 .user-flex a {
     padding-left: 10px;
-}
-
-
-
-
-.col-content{
-    background-color: #131923;
-    flex: 7;
-}
-
-.footer-menu {
-    height: 85px;
-    background-color: #282828;
-}
-
-.header {
-    background-color: #0e131c;
-    min-height: 90px;
 }
