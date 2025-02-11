@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: calc(100vh - 85px);
+    display: flex;
+}
+
+.col-user {
+    background-color: red;
+    flex: 1;
+}
+
+.col-content{
+    background-color: yellow;
+    flex: 5;
+}
+
+.footer-menu {
+    height: 85px;
+    background-color: blue;
+}
+
+.header {
+    background-color: grey;
+    min-height: 90px;
+}
