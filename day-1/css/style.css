@@ -5,20 +5,61 @@
     color: white;
 }
 
+/* COMMON */
+body {
+
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
 .main-container {
     height: calc(100vh - 85px);
     display: flex;
 }
 
-
 /* STILE PER COLONNA PULSANTI PER L'UTENTE + LOGO */
 .col-user {
     background-color: #000000;
     flex:1;
+    padding-left: 15px;
+}
+
+.user-menu {
+    margin-top:30px ;
+}
+
+.user-menu ul {
+    display: flex;
+    flex-direction: column;
+    padding-left:15px ;
+}
+
+.user-menu ul li {
+    padding-bottom: 10px;
+}
+
+.user-menu ul li a {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-menu ul li a img {
+    width: 30px;
+    height: 30px;
 }
 
 #logo img {
-    padding:15px;
+    padding:12px 35px 12px 0px;
 }
 
 
