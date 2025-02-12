@@ -175,11 +175,13 @@ footer {
 
 /* STILE PER CONTENUTO PRINCIPALE DELLA PAGINA (HEADER) */
 .content-header {
-    background-color: #0e131c;
+    background-color: rgba(14, 19, 28, 0.692);
     display: flex;
     justify-content: end;
     padding: 30px 15px;
-    
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 button {all: unset;}
@@ -223,6 +225,7 @@ button {all: unset;}
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 
 .recently-container h2 {
