@@ -23,6 +23,11 @@ img {
     display: block;
 }
 
+.img-card {
+    height: 175px;
+    width: 175px;
+}
+
 .main-container {
     height: calc(100vh - 85px);
     display: flex;
@@ -32,6 +37,7 @@ img {
 .col-content{
     background-color: #131923;
     flex:1;
+    overflow: auto;
 }
 
 footer {
@@ -173,6 +179,7 @@ footer {
     display: flex;
     justify-content: end;
     padding: 30px 15px;
+    
 }
 
 button {all: unset;}
@@ -201,12 +208,27 @@ button {all: unset;}
     font-weight: bold;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 45px;
 }
 
 .genre-menu ul li:hover {
     border-bottom:2px solid #b8f166;
 }
 
+.recently-container {
+    padding-left: 20px;
+}
+
+.recently-song {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.recently-container h2 {
+    padding-bottom: 35px;
+    color: #ffffff;
+}
 
 
 
