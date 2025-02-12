@@ -28,6 +28,11 @@ img {
     width: 175px;
 }
 
+.round-img {
+    border-radius: 50%;
+}
+
+
 .main-container {
     height: calc(100vh - 85px);
     display: flex;
