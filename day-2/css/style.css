@@ -23,11 +23,6 @@ img {
     display: block;
 }
 
-.img-card {
-    height: 175px;
-    width: 175px;
-}
-
 .round-img {
     border-radius: 50%;
 }
@@ -241,7 +236,14 @@ button {all: unset;}
 }
 
 .card {
-    width: 175px;
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 75px) / 6);
+    align-items: center;
+}
+
+.img-card {
+    width: 100%;
 }
 
 .card p.song-sub-title {
@@ -274,17 +276,26 @@ button {all: unset;}
 
 
  /* MEDIA QUERY FOR MOBILE */
- @media screen and (max-width:768px) {
+ @media screen and (max-width:992px) {
     .genre-menu {
        justify-content: center;
     }
 
-
+    .card {
+        width: calc((100% - 45px) / 4);
+    }
 
  }
- 
- @media screen and (max-width:478px) {
 
+@media screen and (max-width:768px){
+    .card {
+        width: calc((100% - 45px) / 2);
+    }
+}
+
+
+ @media screen and (max-width:576px) {
+ 
     .col-user {
         padding:0px;
         height: 100%;
@@ -329,5 +340,9 @@ button {all: unset;}
 
     .user {
         padding: 0px 10px;
+    }
+
+    .card {
+        width: calc((100% - 30px) / 2);
     }
  }
