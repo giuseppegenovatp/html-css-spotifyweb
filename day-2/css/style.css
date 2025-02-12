@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+body {
+    font-family: "Montserrat", serif;
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #949494;
+}
+
+img {
+    display: block;
+}
+
+.main-container {
+    height: calc(100vh - 85px);
+    display: flex;
+}
+
+/* STILI degli altri elementi per creare la struttura dio base */
+.col-content{
+    background-color: #131923;
+    flex:1;
+}
+
+footer {
+    min-height: 85px;
+    background-color: #282828;
+}
+
+.header {
+    background-color: #0e131c;
+    min-height: 90px;
+}
+/* STILI degli altri elementi per creare la struttura dio base */
+
+
+
+/* STILE PER COLONNA DI SINISTRA
+ PER L'UTENTE + LOGO */
+
+ .logo-desktop {
+    padding:12px 35px 12px 0px;
+}
+
+.logo-mobile  {
+    display: none;
+}
+
+.col-user {
+    background-color: #000000;
+    padding-left: 15px;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    min-height: 0;
+    overflow: auto;
+    font-weight: 500;
+    height: 100%;
+}
+
+.user-menu {
+    margin-top:30px ;
+}
+
+.user-menu ul li {
+    padding-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.user-menu ul li a {
+    display: flex;
+    align-items: center;
+}
+
+.user-menu ul li a span {
+    display: inline-block;  
+    margin-left: 10px;
+}
+
+.user-menu ul li img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.3;
+}
+
+.user-playlist {
+    margin-top:30px;
+    padding-bottom:35px;
+}
+
+.icon-add-playlist {
+    padding: 20px;
+    background-color: grey;
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.user-playlist h4 {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.user-playlist ul {
+    padding-top: 10px;
+}
+
+.user-playlist ul li {
+    padding-top: 15px;
+}
+
+.user-playlist ul li a {
+    text-transform: capitalize;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-top: auto;
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+
+.user-flex {
+    display: flex;
+    min-width: calc(100% / 2);
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+
+.user .user-flex img {
+    width: 30px;
+    height: 30px;
+}
+
+.user-info {
+    border-top: 2px solid #9a9a9a;
+    padding-top: 10px;
+}
+
+.user-info .user-flex  img {
+    background-color: #666666;
+    border-radius: 50%;
+}
+
+.user-flex a {
+    padding-left: 10px;
+}
+
+/* STILE PER COLONNA DI SINISTRA
+ PER L'UTENTE + LOGO */
+
+
+
+
+ /* MEDIA QUERY FOR MOBILE */
+ @media screen and (max-width:478px) {
+
+    .col-user {
+        padding:0px;
+        height: 100%;
+    }
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+        padding: 10px;
+    }
+    
+    .user-menu ul {
+        padding-left: 0px; 
+    }
+
+    .user-menu ul li {
+        justify-content: center;
+    }
+
+    .user-menu ul li:hover {
+        border-left: 2px solid #b8f166;
+    }
+    
+    .user-menu ul li a span {
+        display: none;
+    }
+
+    .user-playlist {
+        display: none;
+    }
+
+    .user-info {
+        border: 0;
+    }
+
+    .user-flex a {
+        display:none ;
+    }
+
+    .user {
+        padding: 0px 10px;
+    }
+ }
