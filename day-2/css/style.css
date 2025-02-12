@@ -199,6 +199,8 @@ button {all: unset;}
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .genre-menu ul li:hover {
@@ -209,6 +211,14 @@ button {all: unset;}
 
 
  /* MEDIA QUERY FOR MOBILE */
+ @media screen and (max-width:768px) {
+    .genre-menu {
+       justify-content: center;
+    }
+
+
+ }
+ 
  @media screen and (max-width:478px) {
 
     .col-user {
