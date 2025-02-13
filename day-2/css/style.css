@@ -182,6 +182,7 @@ footer {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 button {all: unset;}
@@ -240,7 +241,39 @@ button {all: unset;}
     flex-direction: column;
     width: calc((100% - 75px) / 6);
     align-items: center;
+    position: relative;
 }
+
+/* PER CREARE UN EFFETTO OVERLAY SU UN IMMAGINE 
+POSSIAMO USARE QUESTA REGOLA */
+.container-img {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.616);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover .overlay{
+    display: flex;
+    font-size: 60px;
+    color: white;
+}
+/* PER CREARE UN EFFETTO OVERLAY SU UN IMMAGINE 
+POSSIAMO USARE QUESTA REGOLA */
+
+
+
+
 
 .img-card {
     width: 100%;
