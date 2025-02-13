@@ -199,44 +199,56 @@
 
         <div class="footer-menu">
 
-            <div class="in-play">
+            <div class="in-play flex-1">
                 <div class="in-play-img">
                     <img src="img/player_left.jpg">
                 </div>
                 <div class="in-play-text">
-                    <p>Sinister</p>
-                    <p>Brano Nome</p>
+                    <p class="title">Sinister</p>
+                    <p class="artist">Brano Nome</p>
                 </div>
                 <div class="in-play-icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-folder"></i></a>
                 </div>
             </div>
 
-            <div class="player">
+            <div class="player flex-1">
                 <div class="player-icon-top">
                     <ul>
                         <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
                         <li><a href="#"><i class="fa-solid fa-backward-step"></i></a></li>
-                        <li><a href="#"><i class="fa-regular fa-circle-play"></i></a></li>
+                        <li><a href="#" class="player-play-button"><i class="player-play-button fa-regular fa-circle-play"></i></a></li>
                         <li><a href="#"><i class="fa-solid fa-forward-step"></i></a></li>
                         <li><a href="#"><i class="fa-solid fa-repeat"></i></a></li>
                     </ul>
                 </div>
                 <div class="progress">
                     <span class="minute">0:25</span>
-                    <div class="progress-bar">progressbar</div>
+                    <div class="progress-bar">
+                        <div class="progress-bar-status"></div>
+                        <div class="progress-bar-over">
+                            <div class="cirle"></div>
+                        </div>
+                    </div>
                     <span class="minute">4:25</span>
                 </div>
             </div>
 
-            <div class="volume">
-                <div class="colume-icon">
-                    <i class="fa-solid fa-list-ul"></i>
-                    <i class="fa-solid fa-desktop"></i>
-                    <i class="fa-solid fa-volume-high"></i>
+            <div class="volume flex-1">
+                <div class="volume-icon">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-list-ul"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-desktop"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-volume-high"></i></a></li>
+                    </ul>
                 </div>
-                <div class="progress-bar-volume">progress</div>
+                <div class="progress-bar">
+                    <div class="progress-bar-status"></div>
+                    <div class="progress-bar-over">
+                        <div class="cirle"></div>
+                    </div>
+                </div>
             </div>
                 
         </div>

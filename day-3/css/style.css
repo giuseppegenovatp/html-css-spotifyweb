@@ -45,7 +45,6 @@ img {
 }
 
 footer {
-    min-height: 85px;
     background-color: #282828;
 }
 
@@ -61,7 +60,7 @@ footer {
  PER L'UTENTE + LOGO */
 
  .logo-desktop {
-    padding:12px 35px 12px 0px;
+    padding: 12px 35px 12px 15px;
 }
 
 .logo-mobile  {
@@ -70,7 +69,6 @@ footer {
 
 .col-user {
     background-color: #000000;
-    padding-left: 15px;
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -79,13 +77,19 @@ footer {
 }
 
 .user-menu {
-    margin-top:30px ;
+    margin-top:30px;
 }
 
 .user-menu ul li {
     padding-bottom: 10px;
     display: flex;
     gap: 10px;
+    padding-left: 20px;
+    border-left: 2px solid transparent;
+}
+
+.user-menu  ul li:hover {
+    border-left:2px solid #b8f166;
 }
 
 .user-menu ul li a {
@@ -111,7 +115,7 @@ footer {
 
 .user-playlist {
     margin-top:30px;
-    padding-bottom:35px;
+    padding:0px 20px;
 }
 
 .icon-add-playlist {
@@ -149,7 +153,7 @@ footer {
     flex-direction: column;
     justify-content: end;
     margin-top: auto;
-    padding-right: 15px;
+    padding: 0px 15px;
     margin-bottom: 10px;
 }
 
@@ -338,16 +342,50 @@ POSSIAMO USARE QUESTA REGOLA */
     width: 47px;
 }
 
+.in-play-text {
+    padding-left: 10px;
+}
+
+.title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.artist {
+    color: #878787;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.in-play-icon {
+    padding-left: 30px;
+    color: #878787;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .player {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 500px;
+    flex: 1;
+    min-width: 150px;
+}
+
+.player-play-button {
+    font-size: 25px;
 }
 
 .player-icon-top ul {
     display: flex;
     gap: 20px;
-    padding-bottom:20px ;
+    padding-bottom:18px;
+    align-items: center;
 }
 
 .player-icon-top ul li a {
@@ -359,6 +397,51 @@ POSSIAMO USARE QUESTA REGOLA */
     display: flex;
     gap: 20px;
     align-items: center;
+    position: relative;    
+}
+
+.progress-bar {
+    position: relative;
+}
+
+.progress-bar-status {
+    min-width: 400px;
+    background-color: #787878;
+    height: 4px;
+    border-radius: 4px;
+    position: relative;
+}
+
+
+.progress-bar-over {
+    background-color: #cbcbcb;
+    height: 4px;
+    width: 200px;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cirle {
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 40%;
+    position: absolute;
+    bottom: -5px;
+    right: 0px;
+    display: none;
+}
+
+.progress-bar-over:hover {
+    background-color: rgb(7, 182, 1);
+    cursor: pointer;
+}
+
+.progress-bar-over:hover .cirle {
+    background-color: white;
+    display: block;
 }
 
 .progress .minute {
@@ -371,6 +454,29 @@ POSSIAMO USARE QUESTA REGOLA */
 
 .volume {
     display: flex;
+    align-items: center;
+}
+
+div.volume > div.progress-bar > div.progress-bar-status {
+    min-width: 80px;
+}
+
+div.volume > div.progress-bar > div.progress-bar-over {
+    width: 40px;
+}
+
+div.volume > div.progress-bar > div.progress-bar-status {
+    min-width: 80px;
+}
+
+div.volume > div.progress-bar > div.progress-bar-over {
+    width: 40px;
+}
+
+.volume-icon ul {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
 }
 
 
@@ -384,12 +490,54 @@ POSSIAMO USARE QUESTA REGOLA */
         width: calc((100% - 45px) / 4);
     }
 
+    div.volume > div.progress-bar > div.progress-bar-status {
+        min-width: 30px;
+    }
+    
+    div.volume > div.progress-bar > div.progress-bar-over {
+        width: 20px;
+    }
+    
+    div.volume > div.progress-bar > div.progress-bar-status {
+        min-width: 60px;
+    }
+    
+    div.volume > div.progress-bar > div.progress-bar-over {
+        width: 30px;
+    }
+
+    .progress-bar-status {
+        min-width: 300px;
+    }
+    
+    
+    .progress-bar-over {
+        width: 200px;
+    }
+    
+
  }
 
 @media screen and (max-width:768px){
     .card {
         width: calc((100% - 45px) / 2);
     }
+    .progress-bar {
+        width: 80%; /* Rimpicciolisce la barra su schermi più piccoli */
+    }
+    .volume-bar {
+        width: 40%; /* Riduce la larghezza del volume su schermi piccoli */
+    }
+
+    .progress-bar-status {
+        min-width: 200px;
+    }
+    
+    
+    .progress-bar-over {
+        width: 100px;
+    }
+
 }
 
 
@@ -410,11 +558,12 @@ POSSIAMO USARE QUESTA REGOLA */
     }
     
     .user-menu ul {
-        padding-left: 0px; 
+        padding-left: 0px;
     }
 
     .user-menu ul li {
         justify-content: center;
+        padding-left: 0px;
     }
     
     .user-menu ul li a span {
@@ -440,4 +589,19 @@ POSSIAMO USARE QUESTA REGOLA */
     .card {
         width: calc((100% - 30px) / 2);
     }
+
+    .progress-bar-status {
+        min-width: 100px;
+    }
+    
+    
+    .progress-bar-over {
+        width: 50px;
+    }
+
+    .in-play-icon {
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
  }
