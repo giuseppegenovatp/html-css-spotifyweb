@@ -321,8 +321,69 @@ POSSIAMO USARE QUESTA REGOLA */
     font-weight: 700;
 }
 
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+
+.now-play {
+    display: flex;
+}
+
+.now-play-img img {
+    width: 45px;
+    height: 45px;
+}
 
 
+.now-play-text {
+    padding-left: 15px;
+    align-content: center;
+}
+
+.now-play-text p.now-play-title {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.now-play-text p.now-play-subtitle {
+    color: #878787;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+.now-play-icon {
+    display: flex;
+    margin-left:50px;
+    gap: 15px;
+    color: #878787;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-panel-progress {
+    display:flex;
+}
+
+.progress {
+    display: flex;
+    padding: 0px 20px;
+}
+
+
+.player-volume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
  /* MEDIA QUERY FOR MOBILE */
