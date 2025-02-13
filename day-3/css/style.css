@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+body {
+    font-family: "Montserrat", serif;
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #949494;
+}
+
+a:hover {
+    color: white;
+}
+
+img {
+    display: block;
+}
+
+.round-img {
+    border-radius: 50%;
+}
+
+
+.main-container {
+    height: calc(100vh - 85px);
+    display: flex;
+}
+
+/* STILI degli altri elementi per creare la struttura dio base */
+.col-content{
+    background-color: #131923;
+    flex:1;
+    overflow: auto;
+}
+
+footer {
+    min-height: 85px;
+    background-color: #282828;
+}
+
+.content-header {
+    background-color: #0e131c;
+    min-height: 90px;
+}
+/* STILI degli altri elementi per creare la struttura dio base */
+
+
+
+/* STILE PER COLONNA DI SINISTRA
+ PER L'UTENTE + LOGO */
+
+ .logo-desktop {
+    padding:12px 35px 12px 0px;
+}
+
+.logo-mobile  {
+    display: none;
+}
+
+.col-user {
+    background-color: #000000;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    font-weight: 500;
+    height: 100%;
+}
+
+.user-menu {
+    margin-top:30px ;
+}
+
+.user-menu ul li {
+    padding-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.user-menu ul li a {
+    display: flex;
+    align-items: center;
+}
+
+.user-menu ul li a span {
+    display: inline-block;  
+    margin-left: 10px;
+}
+
+.user-menu ul li img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.3;
+    margin-left: -2px;
+}
+
+.user-menu ul li img:hover {
+    opacity: 1;
+}
+
+.user-playlist {
+    margin-top:30px;
+    padding-bottom:35px;
+}
+
+.icon-add-playlist {
+    padding: 20px;
+    background-color: grey;
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.icon-add-playlist:hover {
+    background-color: white;
+}
+
+.user-playlist h4 {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.user-playlist ul {
+    padding-top: 10px;
+}
+
+.user-playlist ul li {
+    padding-top: 15px;
+}
+
+.user-playlist ul li a {
+    text-transform: capitalize;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-top: auto;
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+
+.user-flex {
+    display: flex;
+    min-width: calc(100% / 2);
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+
+.user .user-flex img {
+    width: 30px;
+    height: 30px;
+}
+
+.user-info {
+    border-top: 2px solid #9a9a9a;
+    padding-top: 10px;
+}
+
+.user-info .user-flex  img {
+    background-color: #666666;
+    border-radius: 50%;
+}
+
+.user-flex a {
+    padding-left: 10px;
+}
+
+/* STILE PER COLONNA DI SINISTRA
+ PER L'UTENTE + LOGO */
+
+
+/* STILE PER CONTENUTO PRINCIPALE DELLA PAGINA (HEADER) */
+.content-header {
+    background-color: rgba(14, 19, 28, 0.692);
+    display: flex;
+    justify-content: end;
+    padding: 30px 15px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+button {all: unset;}
+
+.upgrade-btn {
+    color: white;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.upgrade-btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.genre-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.genre-menu ul {
+    display: flex;
+    gap: 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+
+.genre-menu ul li:hover {
+    border-bottom:2px solid #b8f166;
+    margin-bottom: -2px;
+}
+
+.recently-container {
+    padding: 0 20px;
+}
+
+.recently-song {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.card p.song-title {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 75px) / 6);
+    align-items: center;
+    position: relative;
+}
+
+/* PER CREARE UN EFFETTO OVERLAY SU UN IMMAGINE 
+POSSIAMO USARE QUESTA REGOLA */
+.container-img {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.616);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover .overlay{
+    display: flex;
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+}
+/* PER CREARE UN EFFETTO OVERLAY SU UN IMMAGINE 
+POSSIAMO USARE QUESTA REGOLA */
+
+
+
+.img-card {
+    width: 100%;
+}
+
+.card p.song-sub-title {
+    text-align: center;
+    color: #b1b1b1;
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 12px
+}
+
+.recently-container .recently-title {
+    padding-bottom: 35px;
+    color: #ffffff;
+}
+
+.create-for {
+    color: #ffffff;
+    padding-bottom: 5px;
+}
+
+.create-for-subtitle {
+    color: #b1b1b1;
+    font-size: 12px;
+    padding-bottom: 35px;
+    font-weight: 700;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+
+
+ /* MEDIA QUERY FOR MOBILE */
+ @media screen and (max-width:992px) {
+    .genre-menu {
+       justify-content: center;
+    }
+
+    .card {
+        width: calc((100% - 45px) / 4);
+    }
+
+ }
+
+@media screen and (max-width:768px){
+    .card {
+        width: calc((100% - 45px) / 2);
+    }
+}
+
+
+ @media screen and (max-width:576px) {
+ 
+    .col-user {
+        padding:0px;
+        height: 100%;
+    }
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+        padding: 10px;
+    }
+    
+    .user-menu ul {
+        padding-left: 0px; 
+    }
+
+    .user-menu ul li {
+        justify-content: center;
+    }
+    
+    .user-menu ul li a span {
+        display: none;
+    }
+
+    .user-playlist {
+        display: none;
+    }
+
+    .user-info {
+        border: 0;
+    }
+
+    .user-flex a {
+        display:none ;
+    }
+
+    .user {
+        padding: 0px 10px;
+    }
+
+    .card {
+        width: calc((100% - 30px) / 2);
+    }
+ }
