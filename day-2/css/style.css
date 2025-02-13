@@ -19,6 +19,10 @@ a {
     color: #949494;
 }
 
+a:hover {
+    color: white;
+}
+
 img {
     display: block;
 }
@@ -68,9 +72,7 @@ footer {
     background-color: #000000;
     padding-left: 15px;
     display: flex;
-    flex-shrink: 0;
     flex-direction: column;
-    min-height: 0;
     overflow: auto;
     font-weight: 500;
     height: 100%;
@@ -100,6 +102,11 @@ footer {
     width: 30px;
     height: 30px;
     opacity: 0.3;
+    margin-left: -2px;
+}
+
+.user-menu ul li img:hover {
+    opacity: 1;
 }
 
 .user-playlist {
@@ -113,6 +120,10 @@ footer {
     color: black;
     font-size: 20px;
     margin-right: 10px;
+}
+
+.icon-add-playlist:hover {
+    background-color: white;
 }
 
 .user-playlist h4 {
@@ -197,6 +208,12 @@ button {all: unset;}
     font-size: 13px;
 }
 
+.upgrade-btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
 .genre-menu {
     display: flex;
     justify-content: center;
@@ -216,6 +233,7 @@ button {all: unset;}
 
 .genre-menu ul li:hover {
     border-bottom:2px solid #b8f166;
+    margin-bottom: -2px;
 }
 
 .recently-container {
@@ -267,11 +285,10 @@ POSSIAMO USARE QUESTA REGOLA */
     display: flex;
     font-size: 60px;
     color: white;
+    cursor: pointer;
 }
 /* PER CREARE UN EFFETTO OVERLAY SU UN IMMAGINE 
 POSSIAMO USARE QUESTA REGOLA */
-
-
 
 
 
@@ -349,10 +366,6 @@ POSSIAMO USARE QUESTA REGOLA */
 
     .user-menu ul li {
         justify-content: center;
-    }
-
-    .user-menu ul li:hover {
-        border-left: 2px solid #b8f166;
     }
     
     .user-menu ul li a span {
