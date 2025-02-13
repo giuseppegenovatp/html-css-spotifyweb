@@ -328,6 +328,52 @@ POSSIAMO USARE QUESTA REGOLA */
 }
 
 
+.in-play {
+    display: flex;
+    align-items: center
+}
+
+.in-play-img img {
+    height: 47px;
+    width: 47px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-icon-top ul {
+    display: flex;
+    gap: 20px;
+    padding-bottom:20px ;
+}
+
+.player-icon-top ul li a {
+    display: flex;
+    gap: 20px;
+}
+
+.progress {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.progress .minute {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+
+.volume {
+    display: flex;
+}
+
+
  /* MEDIA QUERY FOR MOBILE */
  @media screen and (max-width:992px) {
     .genre-menu {
